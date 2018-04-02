@@ -1,0 +1,211 @@
+/* General */
+
+body {
+font-family: 'Slabo 27px', serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+a:link {
+	color: #e2e2e2;
+	text-decoration: none;
+}
+#mainNav a:hover {
+	color: #42f7f7;
+	text-decoration: none;
+}
+
+#mainNav a:active {
+	color: yellow;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #e2e2e2;
+	text-decoration: none;
+}
+
+h1 {
+	color: #e2e2e2;
+	padding: 0px;
+	margin: 0px;
+	font-size: 65px;
+}
+
+h2 {
+	color:lightgrey;
+}
+
+.blue {
+	color: #42f7f7;
+}
+
+.darkgrey {
+	color: #565656;
+}
+
+/* Navigation */
+.my-dark {
+	background-color: black;
+}
+.intro {
+	width: 100%;
+	height: 720px;
+	margin-top: 49px;
+	background-color: purple;
+   background: linear-gradient( rgba(100, 100, 10, 0.5), rgba(0, 0, 0, 0.5)), url('../images/mountains.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size:  cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+.inner {
+	margin-top: -100px;
+}
+
+#about {
+	background-color: #565656;
+}
+
+#projects {
+	background-color: #e2e2e2;
+}
+
+#resume {
+	background-color: #565656;
+/*
+   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/blue.svg');
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    */
+}
+
+#contact {
+   background-color: #034a4a;
+}
+
+.icon {
+	height: 7em;
+	width: auto;
+}
+
+#all_icons {
+	text-align: center;
+	width: 700px;
+}
+
+.my_icon {
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#icon_email {
+	height: 6em;
+}
+
+#headshot {
+    border-radius: 50%;
+    height: 250px;
+    border: 3px solid #e2e2e2;
+}
+
+.lead {
+	font-size: 25px;
+	color: lightgrey;
+}
+
+/* Projects Panel */
+/* Adapted from http://jsfiddle.net/webtiki/MpXYr/2/embedded/result/ */
+
+.square {
+	border: 1px solid lightgrey;
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+
+.square > .overlay {
+	padding: 40% 0;
+ 	visibility: hidden;
+ 	width:100%;
+    height:100%;
+    position:absolute;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.square:hover > .overlay {
+	padding: 40% 0;
+	visibility: visible;
+	width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.8;
+}
+
+.img_1-1{background-image:url('../images/hand_2.png');}
+.img_1-2{background-image:url('../images/computer_vision.png');}
+.img_1-3{background-image:url('../images/cnn.png');}
+.img_2-1{background-image:url('../images/patent.png');}
+.img_2-2{background-image:url('../images/tumor_mediated_immuno.png');}
+.img_2-3{background-image:url('../images/mouse_cnn.png');}
+.img_3-1{background-image:url('../images/hygiene_cnn_2.png');}
+.img_3-2{background-image:url('../images/reporting_dashboard.png');}
+.img_3-3{background-image:url('../images/techfugees.png');}
+
+/*
+   Styles for animated modal (FancyBox)
+   ====================================
+*/
+
+/* Start state */
+.animated-modal {
+  max-width: 650px;
+  border-radius: 4px;
+  overflow: hidden;
+  
+  transform: translateY(-50px);
+  transition: all .7s;
+}
+
+.animated-modal h2,
+.animated-modal p {
+  transform: translateY(-50px);
+  opacity: 0;
+  
+  transition-property: transform, opacity;
+  transition-duration: .4s;
+}
+
+/* Final state */
+.fancybox-slide--current .animated-modal,
+.fancybox-slide--current .animated-modal h2,
+.fancybox-slide--current .animated-modal p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Reveal content with different delays */
+.fancybox-slide--current .animated-modal h2 {
+  transition-delay: .1s;
+}
+
+.fancybox-slide--current .animated-modal p {
+  transition-delay: .3s;
+}
+
+

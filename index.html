@@ -1,0 +1,265 @@
+<!-- 
+Website by Sophia Sanchez 
+Design via adaptations from:
+https://github.com/blackrockdigital/startbootstrap-scrolling-nav
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sophia Sanchez</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- FancyBox JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <!-- FancyBox CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg my-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Sophia Sanchez</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Get In Touch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-primary text-white intro">
+      <div class="container text-center inner">
+        <img src="images/headshot.jpg" id="headshot" alt="Headshot">
+        <h1>Hi, I'm <span style="color:#42f7f7">Sophia</span>.</h1>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="blue">About Me</h2>
+            <p class="lead">Stanford Master's student in Computer Science. Former backend software engineer in San Francisco. Avid bread baker, sometimes ukulele player, and frequent traveler.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="darkgrey">Projects</h2>
+            
+            <div class="projects_container">
+              <!-- 1st row of projects -->
+              <a data-fancybox data-animation-duration="700" data-src="#animatedModal1-1" href="javascript:;">
+              <div class="square img_1-1">
+                  <div class="overlay">
+                  <p>XO Health</p>
+                  <p>Affordable Hand Exoskeleton</p>
+                  </div>
+                      <!-- Popup -->
+                      <div style="display: none;" id="animatedModal1-1" class="animated-modal">
+                      </div>
+              </div> </a>
+
+              <a data-fancybox data-animation-duration="700" data-src="#animatedModal1-2" href="javascript:;">
+              <div class="square img_1-2">
+                  <div class="overlay">
+                  <p>Computer Vision</p>
+                  <p>Cell Segmentation</p>
+                  </div>
+                      <!-- Popup -->
+                      <div style="display: none;" id="animatedModal1-2" class="animated-modal">
+                      </div>
+              </div></a>
+
+              <a data-fancybox data-animation-duration="700" data-src="#animatedModal1-3" href="javascript:;">
+              <div class="square img_1-3">
+                  <div class="overlay">
+                  <p>CNN</p>
+                  <p>Classifier for Cervical Cancer</p>
+                  </div>
+                      <!-- Popup -->
+                      <div style="display: none;" id="animatedModal1-3" class="animated-modal">
+                      </div>
+              </div></a>
+
+              <!-- 2nd row of projects -->
+              <a data-fancybox data-animation-duration="700" data-src="#animatedModal2-1" href="javascript:;">
+              <div class="square img_2-1">
+                  <div class="overlay">
+                  <p>Neurostim Patent</p>
+                  <p>Co-inventor</p>
+                      <!-- Popup -->
+                      <div style="display: none;" id="animatedModal2-1" class="animated-modal">
+                      </div>
+                  </div>
+              </div></a>
+
+              <a data-fancybox data-animation-duration="700" data-src="#animatedModal2-2" href="javascript:;">
+              <div class="square img_2-2">
+                  <div class="overlay">
+                  <p>Computational Modeling</p>
+                  <p>Tumor-mediated Immunosuppression</p>
+                  </div>
+                      <!-- Popup -->
+                      <div style="display: none;" id="animatedModal2-2" class="animated-modal">
+                      </div>
+              </div></a>
+
+              <a data-fancybox data-animation-duration="700" data-src="#animatedModal2-3" href="javascript:;">
+              <div class="square img_2-3">
+                  <div class="overlay">
+                  <p>Neural Network Modeling (Alexnet)</p>
+                  <p>Neural Predictivity</p>
+                  </div>
+                      <!-- Popup -->
+                      <div style="display: none;" id="animatedModal2-3" class="animated-modal">
+                      </div>
+              </div></a>
+
+              <!-- 3rd row of projects -->
+              <a data-fancybox data-animation-duration="700" data-src="#animatedModal3-1" href="javascript:;">
+              <div class="square img_3-1">
+                  <div class="overlay">
+                  <p>Computer Vision</p>
+                  <p>Detecting Hand Washing</p>
+                  </div>
+                      <!-- Popup -->
+                      <div style="display: none;" id="animatedModal3-1" class="animated-modal">
+                      </div>
+              </div></a>
+
+              <a data-fancybox data-animation-duration="700" data-src="#animatedModal3-2" href="javascript:;">
+              <div class="square img_3-2">
+                  <div class="overlay">
+                  <p>Sparkcentral Reporting Dashboard</p>
+                  <p>Realtime Data Analysis</p>
+                  </div>
+                      <!-- Popup -->
+                      <div style="display: none;" id="animatedModal3-2" class="animated-modal">
+                      </div>
+              </div></a>
+
+              <a data-fancybox data-animation-duration="700" data-src="#animatedModal3-3" href="javascript:;">
+              <div class="square img_3-3">
+                  <div class="overlay">
+                  <p>Techfugees</p>
+                  <p>Neural Predictivity</p>
+                  </div>
+                      <!-- Popup -->
+                      <div style="display: none;" id="animatedModal3-3" class="animated-modal">
+                      </div>
+              </div></a>
+
+            </div>
+            <!-- End of projects container -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <h2>Resume</h2>
+            <img src="images/resume_for_website.png" class="resimg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto lead">
+            <h2>Get In Touch</h2>
+            <div id=all_icons>
+              <div class="my_icon">
+              <a href="https://www.linkedin.com/in/sophia-sanchez-8115386a/">
+              <img class="icon" src="images/linkedin.png" alt="LinkedIn">
+              </a>
+              </div>
+              <div class="my_icon">
+              <a href="mailto:sophia.l.sanchez@gmail.com">
+              <img id="icon_email" src="images/email.png" alt="Email">
+              </a>
+              </div>
+              <div class="my_icon">
+              <a href="https://www.github.com/sophialsanchez">
+              <img class="icon" src="images/github.png" alt="Github">
+              </a>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 my-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Sophia Sanchez 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+  </body>
+
+</html>
