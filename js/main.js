@@ -3,7 +3,7 @@ $(document).ready(function(){
     var handle = "sophials"
     var ext = "stanford.edu"
     var address = handle + "@" + ext
-    document.getElementById("email").innerHTML= '<a href="mailto:' + address + '"><img id="icon_email" src="images/email.png" alt="Email"></a>';
+    document.getElementById("email").innerHTML= '<a href="mailto:' + address + '"><img id="icon_email" src="images/email_two.png" alt="Email"></a>';
 
  var popup_1_1 = `
  		<h2>XO Health</h2>
