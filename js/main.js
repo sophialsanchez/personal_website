@@ -1,4 +1,10 @@
-        $(document).ready(function(){
+$(document).ready(function(){
+
+    var handle = "sophials"
+    var ext = "stanford.edu"
+    var address = handle + "@" + ext
+    document.getElementById("email").innerHTML= '<a href="mailto:' + address + '"><img id="icon_email" src="images/email.png" alt="Email"></a>';
+
  var popup_1_1 = `
  		<h2>XO Health</h2>
  		<h3>Affordable Hand Exoskeleton</h3>
@@ -160,8 +166,5 @@ each task of the set of tasks, (2) receiving a signal stream characterizing a ne
     `;
  $('#animatedModal3-2').html(popup_3_2);
  $('#animatedModal3-2').html(popup_3_2);
-
-
-
-            });
+});
 
