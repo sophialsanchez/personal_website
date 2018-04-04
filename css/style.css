@@ -136,6 +136,39 @@ h2 {
     background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
 }
 
+/* Smartphones (portrait) and small windows ----------- */
+@media only screen 
+and (max-width : 400px) {
+    .square {
+      border: 1px solid lightgrey;
+      float:left;
+      position: relative;
+      width: 90%;
+      padding-bottom : 90%; /* = width for a 1:1 aspect ratio */
+      margin:1.66%;
+      background-position:center center;
+      background-repeat:no-repeat;
+      background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+  }
+}
+
+/* Smartphones (landscape) and medium windows ----------- */
+@media only screen 
+and (min-width : 401px)
+and (max-width: 780px) {
+    .square {
+      border: 1px solid lightgrey;
+      float:left;
+      position: relative;
+      width: 45%;
+      padding-bottom : 45%; /* = width for a 1:1 aspect ratio */
+      margin:1.66%;
+      background-position:center center;
+      background-repeat:no-repeat;
+      background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+  }
+}
+
 .square > .overlay {
 	padding: 40% 0;
  	visibility: hidden;
@@ -157,8 +190,11 @@ h2 {
     opacity:0.8;
 }
 
+@media only screen 
+and (min-width : 781px) {
 .projects_container {
   padding-left: 50px;
+}
 }
 
 .img_1-1{background-image:url('../images/hand_2.png');}
